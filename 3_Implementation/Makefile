@@ -4,6 +4,9 @@ TEST_PROJ_NAME= Test_$(PROJ_NAME)
 Build= build
 
 SRC=src/main.c\
+src/info.c\
+src/tax.c\
+
 
 
 

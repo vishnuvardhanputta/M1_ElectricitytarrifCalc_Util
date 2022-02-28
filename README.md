@@ -1,6 +1,15 @@
-# M1_ElectricitytarrifCalc_Util
-# The code quality and Grading.
-* <a href="https://app.codiga.io/public/user/github/vishnuvardhanputta">
-   <img src="https://api.codiga.io/public/badge/user/github/vishnuvardhanputta?style=light" alt="codiga badge" />
-</a>
-* <a href="https://www.codacy.com/gh/vishnuvardhanputta/M1_ElectricitytarrifCalc_Util/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=vishnuvardhanputta/M1_ElectricitytarrifCalc_Util&amp;utm_campaign=Badge_Grade"><img src="https://app.codacy.com/project/badge/Grade/509dc8131a1b41989de52a3d73287b5a"/></a>
+# Packetizer
+* Data packet format as shown in image
+![Packect1](Packet1.png)
+* Yellow is the Example data and Blue is the valid packet data
+
+* The first 2 bytes are start bytes(0xFF) and last one is the stop byte(0x00).
+* Length byte specifies the number of data bytes. 
+* Assume that none of the data bytes or extra bytes in the given array are 0xFF or 0x00. 
+
+* Write a function to search for a valid data packet in the passed Data array with at most 1 data packet and extra bytes
+* Return whether a valid data packet exists or not. 
+* Also save the extracted valid data if present to the resultant array passed to the function.
+
+* Example input and extracted valid packets are shown in image
+![Packect2](Packet2.png)
