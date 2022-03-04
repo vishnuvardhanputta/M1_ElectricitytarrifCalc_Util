@@ -1,10 +1,26 @@
-# High Level Requirements
- * Units will be recorded from the difference of prev reading and current reading.
- * The group will be selected like A or B 
- *  The rate of charge belongs to that particular group will be multiplied with no. of units to get energy charges.
- * The bill amount will be calculated by adding energy charges to fixed charges, customer charges and electrical duty charges.
-# Low Level Requirements
- * Number of units consumed by the consumer
+## **High Level Requriements**
+ 
+|HLR(ID)|Description|
+--- | --- | 
+|HLR01|	Calculates electricity bill according to state |
+|HLR02|	Calculates electricity bill at particular tax decided by govt|	
+|HLR03|	Calculates total Amount at Domestics places|
+|HLR04| Calculates total unit consumed at Domestics places|
+|HLR05|	Calculates total Amount at Non-Domestics places|
+|HLR06| Calculates total unit consumed at Non-Domestics places|
+
+## **Low Level Requriements**
+   
+|LLR(ID)|Description|
+--- | --- | 
+|LLR01_HLR_01| Electricity bill calculation at Domestic (Units * fixed charges)|
+|LLR02_HLR_01| Electricity bill calculation at Non-Domestic if(units>0 && units <50)|
+|LLR03_HLR_01| Electricity bill calculation at Non-Domestic if(units>50 && units <100)|
+|LLR04_HLR_01| Electricity bill calculation at Non-Domestic if(units<101 && units<200)|	
+|LLR05_HLR_02| Electricity bill calculation at Non-Domestic if(units<200 && units<300)|
+|LLR06_HLR_02| Electricity bill calculation at Non-Domestic if(units>301 && units <400)|
+|LLR07_HLR_02| Electricity bill calculation at Non-Domestic if(units>401 && units <500)|
+|LLR08_HLR_02| Electricity bill calculation at Non-Domestic if(units>500)|
 
  # SWOT Analysis
  ## Strength
