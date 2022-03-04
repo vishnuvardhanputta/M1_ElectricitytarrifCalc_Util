@@ -8,6 +8,17 @@
 * Exact bill amount to be calculated
 * Pass Requirement
 
+## High-Level Test Requriements
+
+|Test ID| HLR | Description| Inputs|Expected O/P | Actual O/P|
+--- | --- | --- | --- | --- | --- |
+|TD01|HLR01|Calculating Domestic electricity bill|Choice|Sucess|Sucess|
+|TD02|HLR02|Calculating Domestic electricity bill|Choice|Sucess|Sucess|
+|TD03|HLR03|Calculating total amount at Domestics places|Choice|Sucess|Sucess|
+|TD04|HLR04|Calculates total unit consumed at Domestics places|Choice|Sucess|Sucess|
+
+   
+
 # LOW LEVEL TEST PLAN
 * Previous Reading
 * current reading
@@ -27,3 +38,16 @@
 * Pass Requirements 
 * Bill amounts will get as output 
 * Exits from loops
+
+## Low-Level Test Requriements
+
+|Test ID| LLR | Description| Inputs(Units)|Expected O/P (Amount)| Actual O/P (Amount)|
+--- | --- | --- | --- | --- | --- |
+|TD01|LLR01_HLR01|Electricity bill calculation at Domestic if(units=30)&&state=1|   50|  129.85| 129.85|
+|TD02|LLR02_HLR01|Electricity bill calculation at Non-Domestic if(units>0 && units <50)&&state=1|  45|  253.6|  253.6|
+|TD03|LLR03_HLR01|Electricity bill calculation at Non-Domestic if(units>51 && units <100)&&state=1| 100|  482.3| 482.3|
+|TD04|LLR04_HLR01|Electricity bill calculation at Non-Domestic if(units<101&&units<200)&&state=1|   150|  985.8|  985.8|
+|TD05|LLR05_HLR02|Electricity bill calculation at Non-Domestic if(units<201 && units<300)&&state=1|   280|   2234.48|   2234.48|
+|TD06|LLR06_HLR02|Electricity bill calculation at Non-Domestic if(units>301 && units <400)&&state=1|   355|  3118.78| 3118.78|
+|TD07|LLR07_HLR02|Electricity bill calculation at Non-Domestic if(units>401 && units <500)&&state=1|   425|   3956.45|  3956.45|
+|TD08|LLR08_HLR02|Electricity bill calculation at Non-Domestic if(units>501)&&state=1|   520|   5611.64| 5611.64|
