@@ -23,6 +23,7 @@
 |LLR08_HLR_02| Electricity bill calculation at Non-Domestic if(units>500)|
 
  # SWOT Analysis
+ ![Screenshot (193)](https://user-images.githubusercontent.com/99093515/156719840-d176e273-530a-4be7-8e3e-36d483d000fb.png)
  ## Strength
  * It will be very helpful for the poor
  * Very Easy to calculate without much confusion
@@ -36,5 +37,17 @@
  * From conventional energy sources the energy is converted into useful form of electrical energy and it is generated, transmitted and distributed to consumers. And hence along with the units multiplied with rate of charge,the maintenance nothing but fixed and consumer charges are also added.
  ## Threats
  * Everyone who uses this must pay the fixed charges. Be it a factories or Households
+
+## WHO :
+Consumers of different types will consume the electricity.
+
+## When :
+It can be used everytime and world is nothing without electrical power.
+
+## Where :
+It is used all over the world.
+
+## How :
+From conventional energy sources the energy is converted into useful form of electrical energy and it is generated, transmitted and distributed to consumers. And hence along with the units multiplied with rate of charge,the maintenance nothing but fixed and consumer charges are also added.
 
 
