@@ -2,7 +2,7 @@
 /*#include "unity_internals.h"*/
 #include "bill.h"
 #include "tarrif.h"
-
+ 
 
 #define PROJECT_NAME "ElectricitytarrifCalc"
 
@@ -19,14 +19,14 @@ void setUp()
 void tearDown()
 {
 }
-/* Write all the test functions for Rural Area */ 
+/* Write all the test functions for calculation */ 
 void test_tarrif_calc()
  {
      int prev_readings=200;
      int cur_readings=300;
      int tax=10;
      int group=1;
-  TEST_ASSERT_EQUAL(214.50, tarrif_calc(214.50));
+  TEST_ASSERT_EQUAL(214.50, tarrif_calc());
  }
 
 /* Write all the test functions for Urban Area 

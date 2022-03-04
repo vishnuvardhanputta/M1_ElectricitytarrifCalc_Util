@@ -11,10 +11,10 @@ src/tax.c\
 
 
 INC= inc
-INC_TEST= unity
+INC_TEST= inc
 
-TEST_SRC=src/main.c\
-unity/unity.c
+TEST_SRC=unity_test/test.c\
+unity_test/unity.c
 
 ifdef OS
 	RM=del
@@ -37,7 +37,7 @@ all:
 
 
 run:
-	$(call FixPath,$(PROJ_NAME).$(EXEC))	
+	./$(call FixPath,$(PROJ_NAME).$(EXEC))
 
 
 cppcheck:
@@ -47,10 +47,13 @@ debug:
 	gcc -I $(INC) $(SRC)  -g -o $(PROJ_NAME).$(EXEC)
 	gdb $(PROJ_NAME).$(EXEC)
 
-valgrind:
-	valgrind ./$(TEST_PROJ_NAME).$(EXEC)	 
+valgrind: all
+	 valgrind ./$(call FixPath,$(PROJ_NAME).$(EXEC))	 
 
 
 test:
 	gcc -I $(INC) -I $(INC_TEST) $(TEST_SRC) $(SRC) -o $(call FixPath,$(TEST_PROJ_NAME).$(EXEC))
 	./$(call FixPath,$(TEST_PROJ_NAME).$(EXEC))
+
+clean:
+	$(RM) $(call FixPath,*.out)
