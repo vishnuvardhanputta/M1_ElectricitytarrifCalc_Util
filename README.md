@@ -4,7 +4,7 @@
 ## Build-Linux
 [![Build-linux](https://github.com/vishnuvardhanputta/M1_ElectricitytarrifCalc_Util/actions/workflows/Build-linux.yml/badge.svg)](https://github.com/vishnuvardhanputta/M1_ElectricitytarrifCalc_Util/actions/workflows/Build-linux.yml) 
 ## Unity test
-
+[![CppCheck](https://github.com/vishnuvardhanputta/M1_ElectricitytarrifCalc_Util/actions/workflows/Static_check.yml/badge.svg)](https://github.com/vishnuvardhanputta/M1_ElectricitytarrifCalc_Util/actions/workflows/Static_check.yml)
 ## Codeac Issues
 [![Codeac](https://static.codeac.io/badges/2-457447352.svg "Codeac")](https://app.codeac.io/github/vishnuvardhanputta/M1_ElectricitytarrifCalc_Util)
 ## Codacy Badge
